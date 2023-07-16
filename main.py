@@ -46,7 +46,7 @@ def main():
     if st.button("Recommend Crop"):
 
         print(nitrogen)
-        if((not nitrogen) and (not phosphorous) and (not potassium) and (not temperature) and (not rainfall) and (not ph) and (not humidity)):
+        if( nitrogen and  phosphorous and  potassium and  temperature and  rainfall and ph and humidity):
             BestCrop=CropRecommendation([int(nitrogen),int(phosphorous),int(potassium),float(temperature),float(humidity),float(ph),float(rainfall)])
             st.success(BestCrop)
         else :
