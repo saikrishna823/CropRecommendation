@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-model=pickle.load(open("C:/Users/ASUS/CropRecommendation/trained_model.sav",'rb'))
+model=pickle.load(open("C:/Project/CropRecommendation/trained_model.sav",'rb'))
 #model=pickle.load(open("..train_model.sav",'rb'))
 
 crops=['rice', 'maize', 'chickpea', 'kidneybeans', 'pigeonpeas',
